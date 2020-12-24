@@ -1,0 +1,25 @@
+:root {
+    /* colors */
+    --dark-blue:hsl(217, 28%, 15%);
+    --white: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --font-body: 'Open Sans', sans-serif;
+    --font-headings: 'Raleway', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html {
+    background-color: var(--dark-blue);
+    font-size: 10px;
+}
+
+body {
+    color: var(--white);
+    font-family: var(--font-body);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
