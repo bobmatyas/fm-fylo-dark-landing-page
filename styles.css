@@ -6,6 +6,8 @@
     /* fonts */
     --font-body: 'Open Sans', sans-serif;
     --font-headings: 'Raleway', sans-serif;
+    --main-text-size: 1.4rem;
+    --main-text-line-height: 1.8;
 }
 
 * { box-sizing: border-box; }
@@ -20,6 +22,39 @@ body {
     font-family: var(--font-body);
 }
 
+.intro__illustration {
+    max-width: 100%;
+}
+
+.quote { 
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    padding: 40px 20px 20px 20px;
+}
+
+.quote__text {    
+    font-size: var(--main-text-size);
+    line-height: var(--main-text-line-height);
+}
+
+.quote__attribution {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.quote__attribution__image {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.quote__attribution__author {
+    margin-left: 10px;
+}
+
+.quote__attribution__author__title {
+    font-weight: 700;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
