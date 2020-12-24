@@ -22,6 +22,29 @@ body {
     font-family: var(--font-body);
 }
 
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo { 
+    max-width: 160px; 
+}
+
+.header__nav {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: space;
+}
+
+.header__nav__item {
+    font-size: var(--main-text-size);
+    padding: 0 10px;
+}
+
 .intro__illustration {
     max-width: 100%;
 }
