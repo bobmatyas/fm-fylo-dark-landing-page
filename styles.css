@@ -27,10 +27,28 @@ body {
     line-height: var(--main-text-line-height);
 }
 
+/* utilities */
+
 .img-responsive {
     height: auto;
     max-width: 100%;
 }
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
+
+/* end utilities */
 
 .header {
     align-items: center;
@@ -94,8 +112,7 @@ body {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 700;
-    margin: 25px;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     text-decoration: none;
 }
@@ -195,6 +212,22 @@ body {
     margin: -300px 2% 0 2%;
     padding: 35px 55px;
     text-align: center;
+}
+
+.earlyaccess__email {
+    border-radius: 50px;
+    border: none;
+    font-size: 1.6rem;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.earlyaccess__button {
+    width: 100%;
+}
+
+.earlyaccess__email::placeholder {
+    color: #ccc;
 }
 
 .footer {
