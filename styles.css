@@ -144,6 +144,7 @@ body {
 
 .quotes {
     margin: 5%;
+    padding-bottom: 100px;
 }
 
 .quotes__inner { 
@@ -188,5 +189,25 @@ body {
     font-weight: 700;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.earlyaccess {
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    margin: -300px 2% 0 2%;
+    padding: 35px 55px;
+    text-align: center;
+}
+
+.footer {
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 200px;
+    text-align: left;
+}
+
+.footer__list {
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; color: #fff; margin:0; padding: 25px 0;}
+.attribution a { color: hsl(228, 45%, 44%); color: #fff; }
