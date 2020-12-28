@@ -105,6 +105,10 @@ body {
     padding: 0;
 }
 
+.features {
+    padding: 5%;
+}
+
 .features__box {
     text-align: center;
 }
@@ -137,10 +141,23 @@ body {
     text-decoration: none;
 }
 
+
+.quotes {
+    margin: 5%;
+}
+
+.quotes__inner { 
+    background-image: url('images/bg-quotes.png');
+    background-position: 10px top;
+    background-repeat: no-repeat;
+    padding-top: 35px;
+}
+
 .quote { 
     background-color: hsl(219, 30%, 18%);
     border-radius: 5px;
     padding: 40px 20px 20px 20px;
+    margin-bottom: 40px;
 }
 
 .quote__text {    
@@ -160,10 +177,14 @@ body {
 }
 
 .quote__attribution__author {
+    font-size: 1.4rem;
     margin-left: 10px;
+    letter-spacing: 1px;
+    line-height: 1.8;
 }
 
 .quote__attribution__author__title {
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
