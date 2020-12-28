@@ -1,5 +1,6 @@
 :root {
     /* colors */
+    --cyan:  hsl(176, 68%, 64%);
     --main-bg: hsl(218, 28%, 13%);
     --dark-blue: hsl(217, 28%, 15%);
     --white: hsl(0, 0%, 100%);
@@ -26,7 +27,7 @@ body {
     line-height: var(--main-text-line-height);
 }
 
-.img-reponsive {
+.img-responsive {
     height: auto;
     max-width: 100%;
 }
@@ -114,6 +115,26 @@ body {
 
 .features__box__heading {
     margin-top: 0;
+}
+
+.productive {
+    text-align: center; 
+    padding: 5%;
+}
+
+.productive__paragraph {
+    text-align: left;
+}
+
+.productive__link {
+    background-image: url('images/icon-arrow.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border-bottom: 1px solid var(--cyan);
+    color: var(--cyan);
+    padding: 0 35px 10px 0;
+    text-decoration: none;
 }
 
 .quote { 
