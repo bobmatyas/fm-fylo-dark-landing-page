@@ -1,43 +1,55 @@
 :root {
     /* colors */
-    --dark-blue:hsl(217, 28%, 15%);
+    --main-bg: hsl(218, 28%, 13%);
+    --dark-blue: hsl(217, 28%, 15%);
     --white: hsl(0, 0%, 100%);
 
     /* fonts */
     --font-body: 'Open Sans', sans-serif;
     --font-headings: 'Raleway', sans-serif;
-    --main-text-size: 1.4rem;
+    --font-weight-headings: 700;
+    --main-text-size: 1.6rem;
     --main-text-line-height: 1.8;
 }
 
 * { box-sizing: border-box; }
 
 html {
-    background-color: var(--dark-blue);
+    background-color: var(--main-bg);
     font-size: 10px;
 }
 
 body {
     color: var(--white);
     font-family: var(--font-body);
+    font-size: var(--main-text-size);
+    line-height: var(--main-text-line-height);
 }
 
+.img-reponsive {
+    height: auto;
+    max-width: 100%;
+}
 
 .header {
     align-items: center;
+    background-color: var(--dark-blue);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-width: 100%
 }
 
 .header__logo { 
-    max-width: 160px; 
+    max-width: 140px; 
 }
 
 .header__nav {
     align-items: center;
     display: flex;
     list-style-type: none;
-    justify-content: space;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
 
 .header__nav__item {
@@ -45,8 +57,63 @@ body {
     padding: 0 10px;
 }
 
+.intro {
+    background-color: var(--dark-blue);
+    background-image: url('./images/bg-curvy-mobile.svg');
+    background-position: center 270px;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    text-align: center;
+}
+
+.intro__upper {
+    padding: 5%;
+}
+
+.intro__lower {
+    background-color: var(--main-bg);
+}
+
 .intro__illustration {
-    max-width: 100%;
+    width: 100%;
+}
+
+.intro__heading {
+    font-family: var(--font-headings);
+    font-size: 2.2rem;
+    font-weight: var(--font-weight-headings);
+    margin-top: 0;
+    text-align: center;
+}
+
+.button {
+    background-color: hsl(176, 68%, 64%);
+    border-radius: 50px;
+    display: block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 25px;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.intro__paragraph {
+    margin: 0;
+    padding: 0;
+}
+
+.features__box {
+    text-align: center;
+}
+
+.features__box__image {
+    margin: 70px auto 35px auto;
+}
+
+.features__box__heading {
+    margin-top: 0;
 }
 
 .quote { 
