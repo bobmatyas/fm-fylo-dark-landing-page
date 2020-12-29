@@ -157,10 +157,11 @@
   <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any  questions, our support team would be happy to help you.</p>
 
   <form>
-  <label for="email" class="sr-only"></label>
+  <label for="email" class="sr-only">Email:</label>
   <input type="email" id="email" class="earlyaccess__email" placeholder="email@example.com">
-  <input type="submit" class="button earlyaccess__button" value="Get Started For Free">
+  <input type="submit" id="signup" class="button earlyaccess__button" value="Get Started For Free">
   </form>
+  <p class="hidden signup__form__warning" id="emailWarning">Please provide a valid email</p>
 
     
 </div>
@@ -218,6 +219,6 @@
   </p>
 
 </footer>
-
+<script src="scripts.js"></script>
 </body>
 </html>

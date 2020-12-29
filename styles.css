@@ -48,6 +48,10 @@ body {
 	white-space: nowrap !important;            /* 3 */
 }
 
+.hidden {
+    display: none;
+}
+
 /* end utilities */
 
 .header {
