@@ -52,6 +52,11 @@ body {
     display: none;
 }
 
+.container { 
+    margin: 0 auto;
+    max-width: 1220px; 
+}
+
 /* end utilities */
 
 .header {
@@ -110,6 +115,7 @@ a.header__nav__item__link:active {
 }
 
 .intro__illustration {
+    max-width: 730px;
     width: 100%;
 }
 
@@ -122,7 +128,8 @@ a.header__nav__item__link:active {
 }
 
 .button {
-    background-color: hsl(176, 68%, 64%);
+    background: hsl(198, 60%, 50%);
+    background: linear-gradient(90deg, hsla(176, 68%, 64%, 1), hsla(198, 60%, 50%, 1) 100%); 
     border-radius: 50px;
     display: block;
     color: #fff;
@@ -131,6 +138,11 @@ a.header__nav__item__link:active {
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
+}
+
+.button:hover,
+.button:active {
+    background: var(--cyan);
 }
 
 .intro__paragraph {
@@ -264,7 +276,7 @@ a.productive__link:active {
 }
 
 .signup__form__warning { 
-    color: red;
+    color: hsl(0, 100%, 63%);
     padding-left: 20px;
     text-align: left;
 }
@@ -279,6 +291,18 @@ a.productive__link:active {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+a.footer__list__link:link,
+a.footer__list__link:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+a.footer__list__link:hover,
+a.footer__list__link:active {
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
 }
 
 .footer__social {
@@ -297,12 +321,24 @@ a.productive__link:active {
     padding: 7px 0 0 9px;
     height: 40px;
     width: 40px;
+    position: relative;
+}
+
+
+.footer__social__item:hover {
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 .footer__social__item > svg { max-width: 20px; }
 
 .footer__social__item--facebook {
     padding-left: 10px;
+}
+
+.footer__social__item--twitter {
+    padding-top: 10px;
 }
 
 .footer__social__item--facebook > svg { max-width: 15px; }
