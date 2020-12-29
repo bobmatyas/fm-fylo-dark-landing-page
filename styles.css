@@ -80,6 +80,18 @@ body {
     padding: 0 10px;
 }
 
+a.header__nav__item__link:link,
+a.header__nav__item__link:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.header__nav__item__link:hover,
+a.header__nav__item__link:active {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .intro {
     background-color: var(--dark-blue);
     background-image: url('./images/bg-curvy-mobile.svg');
@@ -151,7 +163,8 @@ body {
     text-align: left;
 }
 
-.productive__link {
+a.productive__link:link,
+a.productive__link:visited {
     background-image: url('images/icon-arrow.svg');
     background-position: top right;
     background-repeat: no-repeat;
@@ -162,6 +175,17 @@ body {
     text-decoration: none;
 }
 
+a.productive__link:hover,
+a.productive__link:active {
+    background-image: url('images/icon-arrow.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    padding: 0 35px 10px 0;
+    text-decoration: none;
+}
 
 .quotes {
     margin: 5%;
@@ -227,11 +251,22 @@ body {
 }
 
 .earlyaccess__button {
+    border: none;
     width: 100%;
+}
+
+.earlyaccess__button:hover {
+    cursor: pointer;
 }
 
 .earlyaccess__email::placeholder {
     color: #ccc;
+}
+
+.signup__form__warning { 
+    color: red;
+    padding-left: 20px;
+    text-align: left;
 }
 
 .footer {
