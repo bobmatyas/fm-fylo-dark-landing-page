@@ -104,7 +104,7 @@ a.header__nav__item__link:active {
 .intro {
     background-color: var(--dark-blue);
     background-image: url('./images/bg-curvy-mobile.svg');
-    background-position: center 270px;
+    background-position: center 160px;
     background-repeat: no-repeat;
     background-size: 150%;
     text-align: center;
@@ -113,10 +113,6 @@ a.header__nav__item__link:active {
 
 .intro__upper {
     padding: 5%;
-}
-
-.intro__lower {
-    background-color: var(--main-bg);
 }
 
 .intro__illustration {
@@ -177,7 +173,8 @@ a.header__nav__item__link:active {
     margin: 70px auto 15px auto;
 }
 
-.features__box__heading {
+.features__box__heading,
+.earlyaccess__heading {
     font-family: var(--font-headings);
     font-size: 1.8rem;
     font-weight: var(--font-weight-headings);
@@ -223,7 +220,7 @@ a.productive__link:active {
 
 .quotes {
     margin: 5%;
-    padding: 250px var(--mobile-rhythm);
+    padding: 150px var(--mobile-rhythm) 250px;
 }
 
 .quotes__inner { 
@@ -276,6 +273,10 @@ a.productive__link:active {
     text-align: center;
 }
 
+.earlyaccess__form {
+    margin-top: 50px;
+}
+
 .earlyaccess__email {
     border-radius: 50px;
     border: none;
@@ -286,7 +287,7 @@ a.productive__link:active {
 
 .earlyaccess__button {
     border: none;
-    margin: 50px 0;
+    margin: 25px 0;
     padding-bottom: 15px;
     padding-top: 15px;
     width: 100%;
@@ -323,6 +324,12 @@ a.productive__link:active {
     justify-content: space-between;
 }
 
+.footer__sections__text--contact {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .footer__sections__text__inner {
     margin-top: -5px;
     margin-left: 50px;
@@ -331,6 +338,7 @@ a.productive__link:active {
 .footer__list {
     list-style-type: none;
     margin-left: 0;
+    margin-top: var(--mobile-rhythm);
     padding-left: 0;
 }
 
@@ -351,6 +359,7 @@ a.footer__list__link:active {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    margin-top: var(--mobile-rhythm);
     margin-left: 0;
     padding-left: 0;
 }
@@ -386,3 +395,19 @@ a.footer__list__link:active {
 
 .attribution { font-size: 11px; text-align: center; color: #fff; margin:0; padding: 25px 0;}
 .attribution a { color: hsl(228, 45%, 44%); color: #fff; }
+
+
+@media (min-width: 800px) {
+    
+    .intro {
+        background-image: url('./images/bg-curvy-desktop.svg');
+    }
+
+    .intro__heading { 
+        font-size: 4.2rem;
+        margin: 0 auto;
+        max-width: 730px;
+        text-align: center;
+    }
+
+}
