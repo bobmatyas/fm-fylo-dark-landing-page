@@ -404,11 +404,20 @@ a.footer__list__link:active {
     
     .intro {
         background-image: url('./images/bg-curvy-desktop.svg');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 0;
+    }
+
+    .intro__upper {
+        padding: 0;
     }
 
     .intro__heading { 
         font-size: 4.2rem;
-        margin: 0 auto;
+        line-height: 1.5;
+        margin: 45px auto 0 auto;
         max-width: 730px;
         text-align: center;
     }
@@ -420,6 +429,26 @@ a.footer__list__link:active {
 
     .button--cta {
         max-width: 280px;
+    }
+
+    .earlyaccess__heading {
+        font-size: 2.5rem;
+    }
+
+    .earlyaccess__form {
+        margin-top: 0;
+    }
+
+    .productive__image {
+        margin: 80px 0;
+    }
+
+    .productive {
+        padding: 0;
+    }
+
+    .quotes {
+        padding: 50px 0 250px 0;
     }
 
     .features,
@@ -456,7 +485,7 @@ a.footer__list__link:active {
         font-size: 3.3rem;
         line-height: 1.2;
         text-align: left;
-        max-width: 75%;
+        max-width: 65%;
     }
 
     .earlyaccess {
@@ -467,18 +496,41 @@ a.footer__list__link:active {
 
     .earlyaccess__form {
         align-items: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
     }
     
     .earlyaccess__email {
-        width: 100%; 
+        width: 380px;
     }
  
     .earlyaccess__button {
         max-width: 200px;
+    }
+
+    .footer__sections {
+        align-items: top;
+        display: grid;
+        gap: 60px;
+        grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: top;
+        margin: var(--desktop-center);
+        max-width: var(--desktop-container)
+    }
+
+    .footer__list,
+    .footer__social,
+    .footer__sections__text {
+        margin-top: 0;
+    }
+
+    .footer__image {
+        margin: var(--desktop-center);
+        max-width: var(--desktop-container);
+    }
+
+    .footer__logo { 
+        margin: 80px 0 35px 0;
     }
 }
