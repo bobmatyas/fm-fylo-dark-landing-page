@@ -14,6 +14,8 @@
 
     /* rhythm */
     --mobile-rhythm: 45px;
+    --desktop-container: 1200px;
+    --desktop-center: 0 auto;
 }
 
 * { box-sizing: border-box; }
@@ -39,16 +41,16 @@ body {
 
 .sr-only {
 	border: 0 !important;
-	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	clip: rect(1px, 1px, 1px, 1px) !important;
 	-webkit-clip-path: inset(50%) !important;
-		clip-path: inset(50%) !important;  /* 2 */
+	clip-path: inset(50%) !important;
 	height: 1px !important;
 	margin: -1px !important;
 	overflow: hidden !important;
 	padding: 0 !important;
 	position: absolute !important;
 	width: 1px !important;
-	white-space: nowrap !important;            /* 3 */
+	white-space: nowrap !important;
 }
 
 .hidden {
@@ -174,6 +176,7 @@ a.header__nav__item__link:active {
 }
 
 .features__box__heading,
+.productive__heading,
 .earlyaccess__heading {
     font-family: var(--font-headings);
     font-size: 1.8rem;
@@ -410,4 +413,72 @@ a.footer__list__link:active {
         text-align: center;
     }
 
+    .intro__cta {
+        margin: var(--desktop-center);
+        max-width: 730px;
+    }
+
+    .button--cta {
+        max-width: 280px;
+    }
+
+    .features,
+    .quotes,
+    .productive {
+        max-width: var(--desktop-container);
+        margin: var(--desktop-center);
+    }
+
+    .features { 
+        display: grid;
+        gap: 10px 150px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .quotes__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 35px;
+    }
+
+    .productive {
+        align-items: center;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+    }
+
+    .productive__heading {
+        font-size: 3.3rem;
+        line-height: 1.2;
+        text-align: left;
+        max-width: 75%;
+    }
+
+    .earlyaccess {
+        max-width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .earlyaccess__form {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .earlyaccess__email {
+        width: 100%; 
+    }
+ 
+    .earlyaccess__button {
+        max-width: 200px;
+    }
 }
