@@ -65,8 +65,11 @@ body {
 /* end utilities */
 
 .header {
-    align-items: center;
     background-color: var(--dark-blue);
+}
+
+.header__inner {
+    align-items: center;
     display: flex;
     justify-content: space-around;
     max-width: 100%;
@@ -401,7 +404,17 @@ a.footer__list__link:active {
 
 
 @media (min-width: 800px) {
-    
+
+    .header {
+        padding: 0 2%;
+    }
+
+    .header__inner {
+        justify-content: space-between;
+        max-width: var(--desktop-container);
+        margin: var(--desktop-center);
+    }
+
     .intro {
         background-image: url('./images/bg-curvy-desktop.svg');
         background-position: bottom center;
@@ -456,6 +469,12 @@ a.footer__list__link:active {
     .productive {
         max-width: var(--desktop-container);
         margin: var(--desktop-center);
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .signup__form__warning {
+        margin: 0;
     }
 
     .features { 
@@ -494,10 +513,16 @@ a.footer__list__link:active {
         margin-right: auto;
     }
 
+    .earlyaccess__button {
+        margin: 0;
+        width: 225px;
+    }
+
     .earlyaccess__form {
         align-items: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: 25px auto 0 auto;
     }
     
     .earlyaccess__email {
@@ -509,12 +534,12 @@ a.footer__list__link:active {
     }
 
     .footer__sections {
-        align-items: top;
+        align-items: start;
         display: grid;
         gap: 60px;
-        grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+        grid-template-columns: 25% 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        justify-content: top;
+        justify-content: start;
         margin: var(--desktop-center);
         max-width: var(--desktop-container)
     }
@@ -525,6 +550,10 @@ a.footer__list__link:active {
         margin-top: 0;
     }
 
+    .footer__social { 
+        display: block;
+    }
+
     .footer__image {
         margin: var(--desktop-center);
         max-width: var(--desktop-container);
@@ -532,5 +561,15 @@ a.footer__list__link:active {
 
     .footer__logo { 
         margin: 80px 0 35px 0;
+    }
+
+    .footer__sections__text__inner {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .footer__social {
+        display: flex;
     }
 }
