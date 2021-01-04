@@ -113,7 +113,7 @@ a.header__nav__item__link:active {
     background-repeat: no-repeat;
     background-size: 150%;
     text-align: center;
-    padding: 0 45px;
+    padding: 0;
 }
 
 .intro__upper {
@@ -129,14 +129,19 @@ a.header__nav__item__link:active {
     font-family: var(--font-headings);
     font-size: 2.2rem;
     font-weight: var(--font-weight-headings);
+    margin-bottom: 0;
     margin-top: 0;
     text-align: center;
 }
 
-.intro__cta {
-    padding: 0 var(--mobile-rhythm);
+.intro__lower {
+    background-color: var(--main-bg);
 }
 
+.intro__cta {
+    padding: 0 var(--mobile-rhythm);
+    background-color: var(--main-bg);
+}
 
 .button {
     background: hsl(198, 60%, 50%);
@@ -160,11 +165,15 @@ a.header__nav__item__link:active {
     margin: 0 auto;
     max-width: 80%;
 }
+
 .intro__paragraph {
-    margin: 50px 0;
+    margin: 0;
     padding: 0;
     text-align: center;
+    padding: 50px 0;
 }
+
+
 
 .features {
     padding: 0 var(--mobile-rhythm);
@@ -421,6 +430,10 @@ a.footer__list__link:active {
         background-repeat: no-repeat;
         background-size: 100%;
         padding: 0;
+    }
+
+    .intro__lower {
+        background-color: transparent;
     }
 
     .intro__upper {
