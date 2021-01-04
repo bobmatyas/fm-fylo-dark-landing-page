@@ -428,12 +428,13 @@ a.footer__list__link:active {
         background-image: url('./images/bg-curvy-desktop.svg');
         background-position: bottom center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% 400px;
         padding: 0;
     }
 
     .intro__lower {
         background-color: transparent;
+        padding-bottom: 160px;
     }
 
     .intro__upper {
@@ -449,8 +450,14 @@ a.footer__list__link:active {
     }
 
     .intro__cta {
+        background-color: transparent;
         margin: var(--desktop-center);
         max-width: 730px;
+    }
+
+    .intro__paragraph {
+        max-width: 520px;
+        margin: var(--desktop-center);
     }
 
     .button--cta {
@@ -584,5 +591,11 @@ a.footer__list__link:active {
 @media screen and (min-width: 1000px) {
     .footer__social {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .intro {
+        background-size: contain;
     }
 }
